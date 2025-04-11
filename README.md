@@ -23,7 +23,7 @@ Esse foi um projeto desenvolvido por discentes do curso de *Engenharia da Comput
 
 [![premium_photo-1661335257817-4552acab9656](https://github.com/user-attachments/assets/395eddb2-4588-47d2-990c-d02d8dc7aa94)](#triangular_rulerbuilding_construction-projeto-mecânica---treliça)
 
-## :dart: Objetivo:
+## :dart: Objetivo
 
 ## :snake: Dependências
 
