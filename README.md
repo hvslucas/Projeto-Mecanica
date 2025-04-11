@@ -1,2 +1,2 @@
-# Projeto-Mec-nica
+# Projeto-Mecanica
 Estática dos Sólidos
