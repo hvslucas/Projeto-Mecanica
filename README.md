@@ -33,7 +33,4 @@ Esse foi um projeto desenvolvido por discentes do curso de *Engenharia da Comput
 
 
 
-## :rescue_worker_helmet: Simulação
-
-
 
