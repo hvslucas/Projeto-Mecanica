@@ -32,15 +32,23 @@ O Projeto 3 consiste na análise de uma treliça plana com barras horizontais, v
 
 1. **Análise dos Casos de Carregamento:**
    - Resolver a treliça para três cenários distintos:
-     - **Caso A:** Forças horizontais aplicadas nos nós 13 e 14 $$ F_{x13} = F_{x14} = 10.000 \quad (N)  $$.
-     - **Caso B:** Forças verticais aplicadas nos nós 13 e 14 $ F_{y13} = F_{y14} = 10.000 \quad (N) $.
-     - **Caso C:** Forças horizontais opostas aplicadas nos nós 13 e 14 $ F_{x13} = 10.000 \quad (N) F_{x14} = -10.000\quad (N) $.
+     - **Caso A:** Forças horizontais aplicadas nos nós 13 e 14
+     
+       $$ F_{x13} = F_{x14} = 10.000 \quad (N) $$
+
+     - **Caso B:** Forças verticais aplicadas nos nós 13 e 14 
+     
+       $$ F_{y13} = F_{y14} = 10.000 \quad (N) $$
+
+     - **Caso C:** Forças horizontais opostas aplicadas nos nós 13 e 14 
+     
+       $$ F_{x13} = 10.000 \quad (N) F_{x14} = -10.000\quad (N) $$
 
 2. **Determinação de Propriedades Equivalentes:**
    - Modelar a treliça como uma viga engastada e livre, calculando:
-     - Rigidez axial \((EA)_{eq}\).
-     - Rigidez à flexão \((EI)_{eq}\).
-     - Rigidez ao cisalhamento \((GA)_{eq}\).
+     - Rigidez axial `EA _{eq}`.
+     - Rigidez à flexão `EI _{eq}`.
+     - Rigidez ao cisalhamento `GA _{eq}`.
 
 3. **Cálculo de Deflexões:**
    - Determinar as deflexões (deslocamento / deformação) na extremidade da treliça para cada caso de carregamento, utilizando as fórmulas da viga equivalente:
