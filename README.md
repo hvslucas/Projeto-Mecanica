@@ -105,6 +105,41 @@ $$ V_{ponta} = \frac{Cl^2}{2(EI)_{eq}} $$
 
 ## :rescue_worker_helmet: Simulação
 
+### 🔧 **Pré-Processamento**
+
+1. **Materiais**:
+Material: Alumínio (biblioteca ANSYS General Materials), com ajuste no módulo de Young.
+
+   **Parâmetros**:
+   - Módulo de Young (E): 100 GPa
+   - Coeficiente de Poisson (ν): 0,33
+
+2. **Geometria**:
+   **Tipo**: Treliça plana com barras horizontais, verticais e inclinadas.
+
+   **Dimensões das barras**:
+   - Horizontais/verticais: L = 0,3 m
+   - Inclinadas: √2L ≈ 0,424 m
+
+   **Seção transversal**:
+   - Área constante: A = 1,0 cm² (1 × 10⁻⁴ m²)
+
+   **Conectividade seguindo o seguinte modelo**:
+
+![image](https://github.com/user-attachments/assets/2be98100-751d-47a6-ad67-ca1a83fba17a)
+
+
+### ⚙️ **Solução**
+
+
+### 📈 **Pós-Processamento**
+
+- Principais resultados obtidos:
+  
+
+### 📂 **Arquivos do ANSYS**
+
+
 ## :gear: Como rodar
 
 
