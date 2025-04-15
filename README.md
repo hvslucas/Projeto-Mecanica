@@ -26,7 +26,7 @@ Esse foi um projeto desenvolvido por discentes do curso de *Engenharia da Comput
 ## :dart: Objetivo
 
 ### Objetivo Geral
-O Projeto 3 consiste na análise de uma treliça plana com barras horizontais, verticais e inclinadas, submetida a três diferentes casos de carregamento. O objetivo principal é determinar as deflexões (deslocamento) e forças nos elementos da treliça, além de modelá-la como uma viga equivalente para validação dos resultados.
+O Projeto consiste na análise de uma treliça plana com barras horizontais, verticais e inclinadas, submetida a três diferentes casos de carregamento. O objetivo principal é determinar as deflexões (deslocamento) e forças nos elementos da treliça, além de modelá-la como uma viga equivalente para validação dos resultados.
 
 ### Objetivos Específicos
 
@@ -52,22 +52,56 @@ O Projeto 3 consiste na análise de uma treliça plana com barras horizontais, v
 
 3. **Cálculo de Deflexões:**
    - Determinar as deflexões (deslocamento / deformação) na extremidade da treliça para cada caso de carregamento, utilizando as fórmulas da viga equivalente:
-     - Deflexão axial: \(u_{\text{ponta}} = \frac{FI}{(EA)_{eq}}\).
-     - Deflexão transversal: \(v_{\text{ponta}} = \frac{FI^3}{3(EI)_{eq}} + \frac{FI}{(GA)_{eq}}\).
-     - Deflexão devido a um momento: \(V_{\text{ponta}} = \frac{Cl^2}{2(EI)_{eq}}\).
+     - Deflexão axial: 
+
+$$ u_{ponta} = \frac{FI}{(EA)_{eq}} $$
+
+   - Deflexão transversal: 
+
+$$ v_{ponta} = \frac{FI^3}{3(EI)\_{eq}} + \frac{FI}{(GA)_{eq}} $$
+
+   - Deflexão devido a um momento:
+     
+$$ V_{ponta} = \frac{Cl^2}{2(EI)_{eq}} $$
 
 4. **Validação do Modelo:**
    - Comparar os resultados obtidos pelo Método dos Elementos Finitos (MEF) com as deflexões calculadas pelo modelo de viga equivalente.
-   - Estender a análise para uma treliça com dois painéis adicionais (\(I = 2,4 \, \text{m}\)) e validar os resultados.
+   - Comparar com o resultado adquirido no Software Ansys Workbench[^1] na versão 2025 R1.
+
+[^1]: O [Ansys é um software de simulação computacional para engenharia](https://razor.com.br/blog/engenharia-e-fabricacao/tudo-sobre-o-ansys/) que possui uma versão disponível para estudantes. Mais no próprio site do software: [Site Oficial](https://www.ansys.com/)
 
 5. **Apresentação dos Resultados:**
    - Organizar os dados em tabelas, incluindo:
      - Deslocamentos nodais.
      - Forças em cada elemento.
-     - Comparação entre os resultados do MEF e do modelo de viga equivalente.
+     - Comparação com o resultado do software
    - Representar graficamente a treliça e destacar as regiões críticas.
 
 ## :snake: Dependências
+
+- **`numpy`**: Biblioteca fundamental para computação científica em Python, fornecendo suporte para arrays multidimensionais e operações matemáticas eficientes.
+  - **Implementação:** Utilizada para criar e manipular arrays das coordenadas dos nós (`nos`), montar a matriz de rigidez global (`K`), resolver sistemas lineares com `np.linalg.solve`, e realizar cálculos vetoriais como normas (`np.sqrt`) e operações de álgebra linear.
+
+- **`pandas`**: Biblioteca para manipulação e análise de dados, especialmente útil para trabalhar com estruturas tabulares.
+  - **Implementação:** Empregada para armazenar e formatar as forças internas das barras em um DataFrame (`df_forcas`), permitindo exibição organizada dos resultados com controle de formatação numérica (`display.float_format`).
+
+- **`matplotlib.pyplot`**: Biblioteca para criação de visualizações estáticas, animadas e interativas em Python.
+  - **Implementação:** Usada para plotar a treliça original e deformada (`plt.plot`, `plt.arrow`), adicionar legendas personalizadas (`Line2D`), configurar títulos e eixos (`plt.title`, `plt.xlabel`), e exibir informações textuais sobre as forças internas (`plt.text`).
+
+- **`matplotlib.lines.Line2D`**: Componente específico do matplotlib para criação e customização de linhas em gráficos.
+  - **Implementação:** Utilizado para criar elementos personalizados na legenda do gráfico, distinguindo visualmente barras em tração (azul) e compressão (vermelho).
+
+### Relação entre Dependências e Funcionalidades Principais:
+1. **Cálculos Estruturais** (`numpy`):
+   - Montagem da matriz de rigidez (`matriz_rigidez_barra`, `montar_matriz_rigidez_global`)
+   - Solução do sistema linear de deslocamentos (`resolver_sistema`)
+
+2. **Gerenciamento de Resultados** (`pandas`):
+   - Tabela de forças internas (`calcular_forcas_internas`)
+
+3. **Visualização** (`matplotlib`):
+   - Plotagem da treliça deformada com cores indicativas (`plotar_trelica`)
+   - Anotação dos valores de força nas barras e legendas personalizadas
 
 ## :rescue_worker_helmet: Simulação
 
