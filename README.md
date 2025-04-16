@@ -224,9 +224,10 @@ Já o arquivo excel com os resultados obtidos está em: [`Resultados Obtidos`](S
 
 ### Para rodar
 
+```sh
 # Windows
 python analise_forca.py
 
 # macOS/Linux
 python3 analise_forca.py
-
+```
