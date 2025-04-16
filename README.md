@@ -129,15 +129,76 @@ Material: Alumínio (biblioteca ANSYS General Materials), com ajuste no módulo 
 ![image](https://github.com/user-attachments/assets/2be98100-751d-47a6-ad67-ca1a83fba17a)
 
 
-### ⚙️ **Solução**
+### ⚙️ **Estática da estrutura**
+
+***Restrições de Apoio:***
+- **Nó inferior**:
+  - Fixo nos eixos **x** e **z** (impedido de se mover nas direções x e z).
+  - Livre para se mover na direção y (vertical).
+- **Nó superior**:
+  - Totalmente fixado (impedido de se mover em todas as direções: x, y e z).
+
+**Caso A**
+
+- **Forças aplicadas nos nós 13 e 14**:
+  - Direção: Horizontal (eixo x)
+  - Magnitude: 10.000 N cada
+  - Sentido: Mesmo sentido
+
+![image](https://github.com/user-attachments/assets/b6303304-acd9-42f3-977a-ada8c3d67e5c)
+
+
+**Caso B**
+
+- **Forças aplicadas nos nós 13 e 14**:
+  - Direção: Vertical (eixo y)
+  - Magnitude: 10.000 N cada
+  - Sentido: Mesmo sentido
+
+![image](https://github.com/user-attachments/assets/54395049-3d20-4468-a35b-9012dbb12bc5)
+
+
+**Caso C**
+
+- **Forças aplicadas nos nós 13 e 14**:
+  - Direção: Horizontal (eixo x)
+  - Magnitude: 10.000 N cada
+  - Sentido: Sentidos opostos
+
+![image](https://github.com/user-attachments/assets/3de99094-62de-4f2d-b193-00e8afd29bdf)
 
 
 ### 📈 **Pós-Processamento**
 
 - Principais resultados obtidos:
   
+**Caso A**
 
-### 📂 **Arquivos do ANSYS**
+![image](https://github.com/user-attachments/assets/2e54e61d-257f-4d50-ac03-9e9aca0820e2)
+
+
+![image](https://github.com/user-attachments/assets/7f040d35-342f-47dc-b57b-23b4cb831463)
+
+**Caso B**
+
+![image](https://github.com/user-attachments/assets/8cc1664e-ca4f-439a-8b2a-b5cfe6706dfd)
+
+
+![image](https://github.com/user-attachments/assets/7bad60d0-3a08-4734-ba12-cc2377d8e378)
+
+
+**Caso C**
+
+![image](https://github.com/user-attachments/assets/65f750ac-3933-4fff-961c-05d1509b7682)
+
+
+![image](https://github.com/user-attachments/assets/b9a3a23a-bea3-44a6-b4ae-2e9dc799e823)
+
+
+
+### 📂 **Arquivos do ANSYS e dos Resultados Obtidos**
+
+
 
 
 ## :gear: Como rodar
