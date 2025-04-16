@@ -204,6 +204,8 @@ Já o arquivo excel com os resultados obtidos está em: [`Resultados Obtidos`](S
 
 ## :gear: Como rodar
 
+Nessa seção está a descrição de como rodar o projeto nativamente apenas com o python. Mas recomendamos o uso do Jupyter Notebook, em especial, utilizando o colab do google. Por conta do resultado no display, ou seja, HTML. Acreditamos que seria necessário a utilização da biblioteca jinja2.
+
 [**Atenção:** Lembre de baixar o projeto e extraí-lo devidamente do `.zip`.](#triangular_rulerbuilding_construction-projeto-mecânica---treliça)
 
 ### Pré-requisitos
