@@ -204,6 +204,8 @@ Já o arquivo excel com os resultados obtidos está em: [`Resultados Obtidos`](S
 
 ## :gear: Como rodar
 
+[**Atenção:** Lembre de baixar o projeto e extraí-lo devidamente do `.zip`.](#triangular_rulerbuilding_construction-projeto-mecânica---treliça)
+
 ### Pré-requisitos
 
 - Python 3.6 ou superior
@@ -218,10 +220,13 @@ Já o arquivo excel com os resultados obtidos está em: [`Resultados Obtidos`](S
 **Instale as dependências**:
    ```bash
    pip install numpy pandas matplotlib
+```
 
-   # Windows
-   python analise_forca.py
+### Para rodar
 
-   # macOS/Linux
-   python3 analise_forca.py
+# Windows
+python analise_forca.py
+
+# macOS/Linux
+python3 analise_forca.py
 
