@@ -200,7 +200,7 @@ Material: Alumínio (biblioteca ANSYS General Materials), com ajuste no módulo 
 
 O arquivo de cada caso para simulação no Ansys está em: [`Simulações no Ansys`](Simulacao/Ansys%20Casos)
 
-Já o arquivo excel com os resultados obtidos está em: [`Resultados Obtidos`](Simulacao/resultados obtidos.xlsx)
+Já o arquivo excel com os resultados obtidos está em: [`Resultados Obtidos`](Simulacao)
 
 ## :gear: Como rodar
 
