@@ -227,7 +227,9 @@ Já o arquivo excel com os resultados obtidos está em: [`Resultados Obtidos`](S
 ```sh
 # Windows
 python analise_forca.py
+python analise_deflexao.py
 
 # macOS/Linux
 python3 analise_forca.py
+python analise_deflexao.py
 ```
