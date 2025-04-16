@@ -204,6 +204,24 @@ Já o arquivo excel com os resultados obtidos está em: [`Resultados Obtidos`](S
 
 ## :gear: Como rodar
 
+### Pré-requisitos
 
+- Python 3.6 ou superior
+- Gerenciador de pacotes pip
+- Bibliotecas: NumPy, Pandas e Matplotlib
 
+**Instale o Python**:
+   - Windows: [Download oficial](https://www.python.org/downloads/) - Execute o instalador, marcando a opção **"Add Python to PATH"**
+   - macOS: `brew install python`
+   - Linux: `sudo apt install python3 python3-pip`
+
+**Instale as dependências**:
+   ```bash
+   pip install numpy pandas matplotlib
+
+   # Windows
+   python analise_forca.py
+
+   # macOS/Linux
+   python3 analise_forca.py
 
